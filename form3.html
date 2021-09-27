@@ -1,0 +1,136 @@
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      } 
+      
+    a 
+    {
+         text-decoration: none;
+         outline: none; 
+    }
+
+    li 
+    {
+        list-style: none;
+    }
+    .web
+    {
+        background-color: white;
+    }
+    .nav-list 
+    {
+    display: flex;
+    flex-direction: row;
+    }
+    .list
+    {
+        padding: 10px 0;
+    }
+    .nav-item 
+    {
+    padding: 10px 15px 10px 10px;
+    border-bottom: 5px solid transparent;
+    font-size: 15px;
+    font-weight: 600;
+    }
+    .nav-item:hover 
+    {
+    cursor: pointer;
+    color: #075794;
+    border-bottom: 5px solid #075794;
+    }
+
+    .search {
+    position: relative;
+    width: 193px;
+    transform: translateY(5px);
+    margin-top: 10px;
+    margin-left: 800px;
+}
+
+.txt-search {
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    border-radius: 15px;
+    border: 1px solid #dfdfdf;
+    font-size: 12px;
+    outline: none;
+}
+
+.btn-search {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+}
+
+.btn-search:hover .search-icon {
+    color: #1e73b5;
+}
+
+.search-icon {
+    font-size: 15px;
+    color: #cfcfcf;
+}
+.top1
+{
+    display: flex;
+    flex-direction: rox;
+}
+.title {
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #e8e8e8;
+}
+
+.title-link {
+    font-size: 13px;
+    color: #363636;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="web">
+    <header class="top1">
+        <a href="#" class="Logo"><img src="http://dut.udn.vn/portals/_default/skins/dhbk/img/front/logo-k_cntt.png" alt="logo" class ="logo-img"></a>
+        <div class="search">
+            <input type="text" class="txt-search" placeholder="Tìm kiếm thông tin">
+            <a class="btn-search">
+                <i class="fas fa-search search-icon"></i>
+            </a>
+        </div>
+    </header>
+
+   <nav class="list">
+    <ul class="nav-list">
+        <li class="nav-item">HOME</li>
+        <li class="nav-item">GIỚI THIỆU</li>
+        <li class="nav-item">TUYỂN SINH</li>
+        <li class="nav-item">ĐÀO TẠO</li>
+        <li class="nav-item">NGHIÊN CỨU KHOA HỌC</li>
+        <li class="nav-item">HỢP TÁC</li>
+        <li class="nav-item">SINH VIÊN</li>
+        <li class="nav-item">CỰU SINH VIÊN</li>
+        <li class="nav-item">LIÊN HỆ</li>
+    </ul>
+   </nav>   
+
+   <div class="main">
+    <div class="main-title">
+        <div class="title">
+            <a href="#" class="title-link">Trang chủ</a>
+        </div>
+        <img src="http://dut.udn.vn/Images/Slides/Slider_KhoaCNTT_KN40namCB.jpg" alt="Ảnh giới thiệu" class="intro-img">
+    </div>
+    </div>
+</body>

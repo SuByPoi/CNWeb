@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <form>
+        <input type="text" name="tx" id="tx-input" onchange="ChangeLocase()">
+        <script>
+            var txchange = document.querySelector('#tx-input')
+            function ChangeLocase()
+            {
+                txchange.value = txchange.value.toUpperCase();
+            }
+        </script>
+    </form>
+</body>
