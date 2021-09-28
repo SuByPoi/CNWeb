@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 33</title>
+
+    <style>
+      body {
+        background: cyan;
+      }
+      .container {
+        text-align: center;
+      }
+      #inp1 {
+        margin-top: 300px;
+        width: 20%;
+      }
+      #inp2 {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <input type="text" name="inp1" id="inp1" /> <br />
+        <br />
+        <input type="text" name="inp2" id="inp2" />
+      </div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        document.getElementById("inp1").focus();
+      };
+
+      document.getElementById("inp1").onblur = function () {
+        var value = document.getElementById("inp1").value;
+        if (value) {
+          var result = "";
+          for (var i = 0; i < value.length; i++) {
+            if (value[i] == value[i].toUpperCase()) {
+              result += value[i].toLowerCase();
+            } else {
+              result += value[i].toUpperCase();
+            }
+          }
+          document.getElementById("inp2").value = result;
+        }
+      };
+    </script>
+  </body>
+</html>

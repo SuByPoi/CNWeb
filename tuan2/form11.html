@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .formlogin {
+        width: 400px;
+        height: 200px;
+        background-color: aquamarine;
+        text-align: center;
+        margin-left: 550px;
+        padding-top: 20px;
+      }
+      .lg {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form1login">
+      <form class="formlogin" name="form1">
+        <label class="lg" for="login">Login</label> <br />
+        <br />
+        <label for="username">Username</label>
+        <input type="text" name="inputname" id="ipname" /> <br />
+        <label for="password">Password&nbsp;</label>
+        <input type="text" name="inputpass" id="ippass" /> <br />
+        <input type="button" value="OK" onclick="ClickOk()" />
+        <input type="button" value="Reset" onclick="ClickReset()" />
+      </form>
+      <script>
+        function ClickOk() {
+          var s = document.getElementById("ipname").value;
+          var p = document.getElementById("ippass").value;
+          if (s.trim() == "" && p.trim() == "")
+            alert("Chưa nhập đầy đủ tài khoản!");
+        }
+        function ClickReset() {
+          document.getElementById("ipname").value = "";
+          document.getElementById("ippass").value = "";
+        }
+      </script>
+    </div>
+  </body>
+</html>

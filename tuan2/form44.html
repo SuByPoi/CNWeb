@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form44</title>
+
+    <style>
+      body {
+        background: cyan;
+      }
+      .container {
+        text-align: center;
+        margin-top: 330px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <select name="select" id="select" class="form-control">
+          <option value="0">Index 0</option>
+          <option value="1">Index 1</option>
+          <option value="2">Index 2</option>
+          <option value="3">Index 3</option>
+        </select>
+        <input type="text" id="inp" class="form-control" />
+        <button id="btn" class="btn" onclick="clickOk()">OK</button>
+      </div>
+      <script lang="JavaScript">
+        function clickOk()
+        {
+            var a = document.getElementById("inp").value;
+            if(a >= 0 && a<= 3) document.getElementById("select").options.selectedIndex = a;
+        }
+      </script>
+    </div>
+  </body>
+</html>
